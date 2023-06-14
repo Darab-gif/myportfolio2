@@ -1,13 +1,59 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -65px;
+  width: 1px;
+  height: calc(100% + 10px);
+  background: hsl(45, 54%, 58%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.input:focus {
+  border: 1px solid hsl(45, 54%, 58%);
+}
+
+@media (max-width: 480px) {
+  .item:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -42px;
+    width: 1px;
+    height: calc(100% + 10px);
+    background: hsl(45, 54%, 58%);
+  }
+}
+
+@media (min-width: 768px) {
+  .item:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -41px;
+    width: 1px;
+    height: calc(100% + 10px);
+    background: hsl(45, 54%, 58%);
+  }
+}
+.scrollbar::-webkit-scrollbar {
+  width: 5px; /* for vertical scrollbar */
+  height: 5px; /* for horizontal scrollbar */
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: hsl(240, 1%, 17%);
+  border-radius: 5px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: hsl(45, 100%, 72%);
+  border-radius: 5px;
+}
+
+.scrollbar::-webkit-scrollbar-button {
+  width: 20px;
 }
