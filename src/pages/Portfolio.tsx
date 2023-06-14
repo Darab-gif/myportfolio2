@@ -65,25 +65,31 @@ const Portfolio = () => {
               </div>
             )}
             {active === 2 && (
-              <div className="grid lg:grid-cols-3 lg:gap-3 gap-5">
+              <div className="grid lg:grid-cols-3 lg:gap-3 gap-5 cursor-pointer">
                 {filteredWeb.map((item) => (
-                  <div>
-                    <span>{item.icon}</span>
-                    <p className="text-light-gray font-[500]">
-                      {item.category}
-                    </p>
+                  <div className="mt-4">
+                    <a href={item.link}>
+                      <span>{item.icon}</span>
+                      <p className="text-light-gray font-[700]">{item.name}</p>
+                      <p className="text-light-gray font-[500]">
+                        {item.category}
+                      </p>
+                    </a>
                   </div>
                 ))}
               </div>
             )}
             {active === 3 && (
-              <div className="grid lg:grid-cols-3 lg:gap-3 gap-5">
+              <div className="grid lg:grid-cols-3 lg:gap-3 gap-5 cursor-pointer">
                 {filteredApp.map((item) => (
-                  <div>
-                    <span>{item.icon}</span>
-                    <p className="text-light-gray font-[500]">
-                      {item.category}
-                    </p>
+                  <div className="mt-4">
+                    <a href={item.link}>
+                      <span>{item.icon}</span>
+                      <p className="text-light-gray font-[700]">{item.name}</p>
+                      <p className="text-light-gray font-[500]">
+                        {item.category}
+                      </p>
+                    </a>
                   </div>
                 ))}
               </div>
