@@ -127,32 +127,32 @@ export const Skill: skills[] = [
 interface exp {
   id: number;
   head: string;
-  from: number;
-  to: number;
+  from: string;
+  to: string;
   info: string;
 }
 
 export const Experience: exp[] = [
   {
     id: 1,
-    head: "Frontend Developer, interns",
-    from: 2015,
-    to: 2019,
-    info: "Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas molestias exceptur.",
+    head: "SoftAmplify Technologies, Nigeria— Frontend Developer ",
+    from: "2020",
+    to: "2021",
+    info: "I collaborated with the Lead Engineer in building functional user interface, Debugged and Fixed the JavaScript issues",
   },
   {
     id: 2,
-    head: "Frontend Developer, interns",
-    from: 2015,
-    to: 2019,
-    info: "Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas molestias exceptur.",
+    head: "Fiverr and Upwork,  — Frontend Developer",
+    from: "2021",
+    to: "Present",
+    info: "Converted Figma files into HTML & CSS, Converted Figma and PSD files into React",
   },
   {
     id: 3,
-    head: "Frontend Developer, interns",
-    from: 2015,
-    to: 2019,
-    info: "Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas molestias exceptur.",
+    head: "Bismuth Technologies, Ghanna— Frontend Developer ",
+    from: "2022",
+    to: "2023",
+    info: "Developed functional Client Profile Page and I implemented an interactive programming features: Animation, AOS etc.",
   },
 ];
 

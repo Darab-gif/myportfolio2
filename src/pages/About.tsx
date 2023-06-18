@@ -40,7 +40,7 @@ const About = () => {
                       {item.icon}
                     </span>
                   </div>
-                  <div className="text-center ">
+                  <div className="text-center p-2">
                     <h1 className="text-white lg:font-[500] font-[700] lg:text-2xl text-[20px]">
                       {item.header}
                     </h1>
