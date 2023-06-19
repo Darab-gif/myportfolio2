@@ -51,7 +51,7 @@ const Portfolio = () => {
 
           <div className="lg:mt-[4rem] mt-[2rem] md:mt-[4rem] md:pl-6 pl-4">
             {active === 1 && (
-              <div className="grid lg:grid-cols-3 md:grid-cols-2 lg:gap-3 gap-6  cursor-pointer">
+              <div className="grid lg:grid-cols-3 md:grid-cols-2 lg:gap-3 gap-6">
                 {portfolio.map((item) => (
                   <div key={item.id} className="mt-4">
                     <span>{item.icon}</span>
