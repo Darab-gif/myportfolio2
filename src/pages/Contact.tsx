@@ -31,6 +31,8 @@ const Contact: React.FC = () => {
       setName("");
       setEmail("");
       setMessage("");
+
+      //console.log()
     } catch (error) {
       // Handle error
       console.error(error);
